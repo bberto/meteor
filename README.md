@@ -5,7 +5,7 @@ to build:
 `docker build -t bberto/meteor .`
 
 to run:
-`docker run --name myapp -v /host/myapp/code:/code -p 3000:4000 bberto/meteor`
+`docker run --name myapp -v /host/myapp/code:/code -p 4000:3000 bberto/meteor`
   
 to initially copy app files:
 `docker cp . myapp:/app`
