@@ -7,5 +7,8 @@ to build:
 to run:
 `docker run --name myapp -v /host/myapp/code:/code bberto/meteor`
   
+to initially copy app files:
+`docker cp . myapp:/app`
+
 to rsync:
 `docker exec calipso rsync -av --exclude-from /code/.dockerignore /code /app`
