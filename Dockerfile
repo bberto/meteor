@@ -13,7 +13,7 @@ RUN apt-get install -y rsync curl
 
 COPY . /app/
 
-RUN curl https://install.meteor.com/ | sh
+RUN curl https://install.meteor.com/?release=1.4.1.2 | sh
 
 WORKDIR /app
 
